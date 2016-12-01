@@ -1,0 +1,22 @@
+<p>
+  <strong>Year group:</strong>
+  <%= @quiz.year_group %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @quiz.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @quiz.description %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @quiz.image %>
+</p>
+
+<%= link_to 'Edit', edit_quiz_path(@quiz) %> |
+<%= link_to 'Back', quizzes_path %>

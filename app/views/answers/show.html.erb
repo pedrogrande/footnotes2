@@ -1,0 +1,27 @@
+<p>
+  <strong>Question:</strong>
+  <%= @answer.question %>
+</p>
+
+<p>
+  <strong>Order:</strong>
+  <%= @answer.order %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @answer.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @answer.description %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @answer.image %>
+</p>
+
+<%= link_to 'Edit', edit_answer_path(@answer) %> |
+<%= link_to 'Back', answers_path %>

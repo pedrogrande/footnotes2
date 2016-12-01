@@ -1,0 +1,11 @@
+
+
+<h1>Quiz: <%= @quiz.name %></h1>
+
+<%= @quiz.questions.first.title %><br>
+
+<% @quiz.questions.first.answers.each do |answer| %>
+  <%= link_to record_answer_path(answer) do %><%= image_tag answer.image, width: '150px' %><% end %>
+<% end %>
+<br><br>
+<%= link_to 'Next question', my_quiz_path, class: 'btn btn-primary disabled' %>

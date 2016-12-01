@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  question: one
+  order: 1
+  title: MyString
+  description: MyText
+  image: MyString
+
+two:
+  question: two
+  order: 1
+  title: MyString
+  description: MyText
+  image: MyString

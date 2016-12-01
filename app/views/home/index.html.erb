@@ -1,2 +1,15 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<h1>FootNotes App</h1>
+<p>Hey! Do a quiz!</p>
+
+<%# link_to 'Start your quiz now', new_user_registration_path, class: 'btn btn-primary btn-lg' %>
+
+<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= f.error_notification %>
+
+  <%= f.input :email, required: true, label: 'Enter your email to start' %>
+  <%= f.input :password, as: :hidden, input_html: { value: Devise.friendly_token.first(8) } %>
+
+  <div class="form-actions">
+    <%= f.submit "Start quiz", class: 'btn btn-success btn-lg' %>
+  </div>
+<% end %>

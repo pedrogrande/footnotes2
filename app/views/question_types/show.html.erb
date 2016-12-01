@@ -1,0 +1,17 @@
+<p>
+  <strong>Name:</strong>
+  <%= @question_type.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @question_type.description %>
+</p>
+
+<p>
+  <strong>Num of answers required:</strong>
+  <%= @question_type.num_of_answers_required %>
+</p>
+
+<%= link_to 'Edit', edit_question_type_path(@question_type) %> |
+<%= link_to 'Back', question_types_path %>

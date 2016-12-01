@@ -1,0 +1,12 @@
+<p>
+  <strong>Name:</strong>
+  <%= @year_group.name %>
+</p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @year_group.code %>
+</p>
+
+<%= link_to 'Edit', edit_year_group_path(@year_group) %> |
+<%= link_to 'Back', year_groups_path %>

@@ -1,0 +1,14 @@
+<%= simple_form_for(@quiz) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.association :year_group %>
+    <%= f.input :name %>
+    <%= f.input :description %>
+    <%= f.input :image %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
